@@ -5,43 +5,43 @@ This time is about function and return but use ex25.py file as an import for pyt
 ## Exercise
 
 1. Create an ex25.py and write following code:
-```py
-def break_words(stuff):
-    """This function will break up words for us."""
-    words = stuff.split(' ')
-    return words
-
-def sort_words(words):
-    """Sorts the words."""
-    return sorted(words)
-
-def print_first_word(words):
-    """Print the first word after popping it off."""
-    word = words.pop(0)
-    print(word)
-
-def print_last_words(words):
-    """Prints the last word after popping it off."""
-    word = words.pop(-1)
-    print(word)
-
-def sort_sentence(sentence):
-    """Takes in a full sentence and returns the sorted words."""
-    words = break_words(sentence)
-    return sort_words(words)
-
-def print_first_and_last(sentence):
-    """Prints the first and last words of the sentence."""
-    words = break_words(sentence)
-    print_first_word(words)
-    print_last_word(words)
-
-def print_first_and_last_sorted(sentence):
-    """Sorts the words then prints the first and last one."""
-    words = sort_sentence(sentence)
-    print_first_word(words)
-    print_last_words(words)
-```
+    ```py
+    def break_words(stuff):
+        """This function will break up words for us."""
+        words = stuff.split(' ')
+        return words
+    
+    def sort_words(words):
+        """Sorts the words."""
+        return sorted(words)
+    
+    def print_first_word(words):
+        """Print the first word after popping it off."""
+        word = words.pop(0)
+        print(word)
+    
+    def print_last_words(words):
+        """Prints the last word after popping it off."""
+        word = words.pop(-1)
+        print(word)
+    
+    def sort_sentence(sentence):
+        """Takes in a full sentence and returns the sorted words."""
+        words = break_words(sentence)
+        return sort_words(words)
+    
+    def print_first_and_last(sentence):
+        """Prints the first and last words of the sentence."""
+        words = break_words(sentence)
+        print_first_word(words)
+        print_last_word(words)
+    
+    def print_first_and_last_sorted(sentence):
+        """Sorts the words then prints the first and last one."""
+        words = sort_sentence(sentence)
+        print_first_word(words)
+        print_last_words(words)
+    ```
 2. Start python interpreter, `python` and do following (I made a interpreter-script.py with few changes):
     ```py
     import ex25
@@ -83,6 +83,7 @@ def print_first_and_last_sorted(sentence):
 1. Now all function of ex25, start *python interpreter*, then:
     ```py
     >>> import ex25
+    >>> from ex25 import * # no need to use ex25 everytime when callout any function.
     >>> help(ex25) # show all possible function.
     ```
 2. `import filename` only work if both files present in same directory.
