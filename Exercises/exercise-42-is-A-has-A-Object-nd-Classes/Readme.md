@@ -195,3 +195,4 @@ Two catch phrases: “is-a” and “has-a.”:
 1. **is-a** showed direct connection between object and class.
 2. **has-a** showed up when object and class releated by *refrenece*.
 3. `super()` is used to called method/function of parent class.
+4. `class Classname():` work fine in modern 3+ ver of python so no need to use `object` argument.
